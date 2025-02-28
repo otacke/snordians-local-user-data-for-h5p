@@ -22,7 +22,8 @@ jobs:
           echo "ZIP_NAME=${ZIP_NAME}" >> $GITHUB_ENV
           zip -rq "$ZIP_NAME" . \
             -x ".github/*" ".git/*" ".gitignore" \
-            "node_modules/*" "package-lock.json" "package.json" "phpcs.xml"
+            "node_modules/*" "package-lock.json" "package.json" "phpcs.xml" \
+            "eslint.config.js"
 
       - name: Upload ZIP to Release
         uses: softprops/action-gh-release@v2
