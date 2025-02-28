@@ -108,6 +108,10 @@ export default class SustainumH5PLocalUserData {
           this.h5pHolders[contentId].startGetCurrentStateProcess(
             this.saveFrequency,
             (state) => {
+              if (H5P.isEmpty?.(state)) {
+                return;
+              }
+
               this.saveState(this.getJsonContent(contentId), state, contentId);
             }
           );
