@@ -1,0 +1,36 @@
+name: Release ZIP Build
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build-and-upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Node.js dependencies
+        run: npm install --production
+
+      - name: Install Composer dependencies
+        run: composer install --no-dev --optimize-autoloader
+
+      - name: Update Composer dependencies (for git-based dependencies)
+        run: composer update
+
+      - name: Create ZIP file
+        run: |
+          ZIP_NAME="sustainum-h5p-local-user-data.zip"
+          echo "ZIP_NAME=${ZIP_NAME}" >> $GITHUB_ENV
+          zip -r "$ZIP_NAME" . \
+            -x ".github/*" ".gitignore" ".git/*" "node_modules" "package-lock.json" "package.json" "phpcs.xml"
+
+      - name: Upload ZIP to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ env.ZIP_NAME }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
