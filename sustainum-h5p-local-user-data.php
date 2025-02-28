@@ -86,7 +86,10 @@ function initialize() {
 			);
 
 			if ( in_array( $handle, $module_scripts, true ) ) {
-				$tag = str_replace( 'text/javascript', 'module', $tag );
+				if ( strpos( $tag, 'type=' ) === false ) {
+					$tag = str_replace( ' src', ' type="module" src', $tag );
+				}
+				return $tag;
 			}
 			return $tag;
 		},
