@@ -12,15 +12,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install Node.js dependencies
-        run: npm install --production
-
-      - name: Install Composer dependencies
-        run: composer install --no-dev --optimize-autoloader
-
-      - name: Update Composer dependencies (for git-based dependencies)
-        run: composer update
-
       - name: Create ZIP file
         run: |
           ZIP_NAME="sustainum-h5p-local-user-data.zip"
