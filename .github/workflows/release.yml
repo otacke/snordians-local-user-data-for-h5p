@@ -14,10 +14,12 @@ jobs:
 
       - name: Create ZIP file
         run: |
+          set -e  # Exit on error
           ZIP_NAME="sustainum-h5p-local-user-data.zip"
           echo "ZIP_NAME=${ZIP_NAME}" >> $GITHUB_ENV
-          zip -r "$ZIP_NAME" . \
-            -x ".github/*" ".gitignore" ".git/*" "node_modules" "package-lock.json" "package.json" "phpcs.xml"
+          zip -rq "$ZIP_NAME" . \
+            -x ".github/*" ".git/*" ".gitignore" \
+            "node_modules/*" "package-lock.json" "package.json" "phpcs.xml"
 
       - name: Upload ZIP to Release
         uses: softprops/action-gh-release@v2
