@@ -88,6 +88,9 @@ function initialize() {
 			if ( in_array( $handle, $module_scripts, true ) ) {
 				if ( strpos( $tag, 'type=' ) === false ) {
 					$tag = str_replace( ' src', ' type="module" src', $tag );
+				} else {
+					// Workaround for outdated type that is not required since HTML5/2014.
+					$tag = str_replace( 'type="text/javascript"', 'type="module"', $tag );
 				}
 				return $tag;
 			}
