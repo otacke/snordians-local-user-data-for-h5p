@@ -10,12 +10,15 @@ License URI: https://github.com/otacke/sustainum-h5p-local-user-data/blob/master
 Allows to additionally store the H5P content type state in LocalStorage.
 
 == Description ==
-The "Sustainum H5P Local User Data" plugin for WordPress allows amends the H5P plugin for WordPress. The latter
+The "Sustainum H5P Local User Data" plugin for WordPress amends the H5P plugin for WordPress. The latter
 saves the previous state of H5P content in the server's database for users who are logged in. This plugin will,
 when activated, also store the previous state in the user's browser and retrieve it from there. This enables to resume
 H5P content without having to be logged in.
 
 == Install ==
+
+=== Install via WordPress plugin repository ===
+Install just like any other plugin.
 
 === Upload ZIP file ===
 1. Go to https://github.com/otacke/sustainum-h5p-local-user-data/releases.
@@ -44,6 +47,8 @@ you will go to the H5P plugin settings:
 - Browser's limit the local storage available per domain to 5MB or 10MB. That means if there is lots of H5P contents
   that users use or there are H5P contents that store a lot of data or if other parts or your site also use the local
   storage, then space may run out and data may get lost.
+- As with H5P itself, the plugin cannot store the state of content that is embedded using embed codes instead of using a
+  WordPress shortcode.
 
 == Privacy ==
 Beware that (in theory) the H5P user state could contain personal information of the user if the respective exercise
