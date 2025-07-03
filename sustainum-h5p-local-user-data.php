@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/otacke/sustainum-h5p-local-user-data
  * Text Domain: sustainum-h5p-local-user-data
  * Description: Store H5P user data in local storage.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Sustainum, Oliver Tacke (SNORDIAN)
  * Author URI: https://snordian.de
  * License: MIT
@@ -18,7 +18,7 @@ namespace Sustainum\H5PLocalUserData;
 defined( 'ABSPATH' ) || die( 'No script kiddies please!' );
 
 if ( ! defined( 'SUSTAINUMH5PLOCALUSERDATA_VERSION' ) ) {
-	define( 'SUSTAINUMH5PLOCALUSERDATA_VERSION', '1.0.1' );
+	define( 'SUSTAINUMH5PLOCALUSERDATA_VERSION', '1.0.2' );
 }
 
 /**
