@@ -30,3 +30,9 @@ Beware that (in theory) the H5P user state could contain personal information of
 
 ## License
 The Sustainum H5P Local User Data plugin for WordPress is is licensed under the [MIT License](https://github.com/otacke/sustainum-h5p-local-user-data/blob/master/LICENSE).
+
+## Sponsor note
+The plugin was developed within the [XR Energy project](https://xr-energy.eu/).
+
+_"Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.”_
+

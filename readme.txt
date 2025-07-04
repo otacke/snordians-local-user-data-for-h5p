@@ -56,3 +56,8 @@ demands to enter personal information. The "Sustainum H5P Local User Data" plugi
 of that information - in other words: you are not processing it. However, since the H5P plugin will send the very same
 information to your server, dealing with privacy implications of the H5P plugin may or may not be relevant for you
 depending on your local privacy laws.
+
+== Sponsor note ==
+The plugin was developed within the [XR Energy project](https://xr-energy.eu/).
+
+"Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.”
