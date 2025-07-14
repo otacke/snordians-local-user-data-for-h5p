@@ -1,2 +1,2 @@
-import SustainumH5PLocalUserData from './sustainum_h5p_local_user_data.js';
-new SustainumH5PLocalUserData();
+import SustainumsLocalUserDataForH5P from './sustainum_local_user_data_for_h5p.js';
+new SustainumsLocalUserDataForH5P();

@@ -1,4 +1,4 @@
-<ruleset name="Sustainum H5P Local User Data">
+<ruleset name="Sustainum's Local User Data for H5P">
     <rule ref="WordPress" />
-    <file>sustainum-h5p-local-user-data.php</file>
+    <file>sustainums-local-user-data-for-h5p.php</file>
 </ruleset>
