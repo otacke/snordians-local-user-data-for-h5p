@@ -20,7 +20,7 @@ export default class SustainumsLocalUserDataForH5P {
     this.saveTimeouts = {};
     this.h5pHolders = {};
 
-    this.saveFrequency = sustainumsLocalUserDataForH5P.sanitizeSaveFrequency(window.H5PIntegration?.saveFreq);
+    this.saveFrequency = SustainumsLocalUserDataForH5P.sanitizeSaveFrequency(window.H5PIntegration?.saveFreq);
     if (typeof this.saveFrequency !== 'number') {
       return; // State should not be saved.
     }
@@ -72,7 +72,7 @@ export default class SustainumsLocalUserDataForH5P {
    * Attempt to start.
    */
   attemptToStart() {
-    if (!sustainumsLocalUserDataForH5P.isH5PRunning()) {
+    if (!SustainumsLocalUserDataForH5P.isH5PRunning()) {
       return;
     }
 
