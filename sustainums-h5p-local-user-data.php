@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Sustainums's Local User Data for H5P
+ * Plugin Name: Sustainum's Local User Data for H5P
  * Plugin URI: https://github.com/otacke/sustainums-local-user-data-for-h5p
  * Text Domain: sustainums-local-user-data-for-h5p
  * Description: Store H5P user data in local storage.
