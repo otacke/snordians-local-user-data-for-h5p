@@ -26,13 +26,12 @@ if ( ! defined( 'SUSTAINUMSLOCALUSERDATAFORH5P_VERSION' ) ) {
  *
  * @since 1.0
  */
-function initialize() {
+function shlud_initialize() {
 	if ( is_admin() ) {
 		return;
 	}
 
 	// WordPress 6.5+ (04/2024) allows to use wp_enqueue_script_module, but we try to still support some older versions.
-
 	wp_enqueue_script(
 		'shlud-main',
 		plugins_url( '/js/main.js', __FILE__ ),
@@ -101,4 +100,4 @@ function initialize() {
 	);
 }
 
-add_action( 'the_post', 'Sustainum\LocalUserDataForH5P\initialize' );
+add_action( 'the_post', 'Sustainum\LocalUserDataForH5P\shlud_initialize' );
