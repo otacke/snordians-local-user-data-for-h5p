@@ -4,7 +4,7 @@ import H5PHolder from './h5p_holder.js';
 /** @constant {number} MIN_SAVE_FREQUENCY_MS Minumum save frequence in ms. */
 const MIN_SAVE_FREQUENCY_MS = 1000;
 
-export default class SustainumsLocalUserDataForH5P {
+export default class SnordiansLocalUserDataForH5P {
 
   /**
    * @class
@@ -20,14 +20,14 @@ export default class SustainumsLocalUserDataForH5P {
     this.saveTimeouts = {};
     this.h5pHolders = {};
 
-    this.saveFrequency = SustainumsLocalUserDataForH5P.sanitizeSaveFrequency(window.H5PIntegration?.saveFreq);
+    this.saveFrequency = SnordiansLocalUserDataForH5P.sanitizeSaveFrequency(window.H5PIntegration?.saveFreq);
     if (typeof this.saveFrequency !== 'number') {
       return; // State should not be saved.
     }
 
     this.localStorageHandler = new LocalStorageHandler({
       identifierTemplate:
-        `WP-bid-${window.sustainumsLocalUserDataForH5P?.wpBlogId ?? ''}-H5P-cid-{contentId}-sid-{subContentId}`,
+        `WP-bid-${window.snordiansLocalUserDataForH5P?.wpBlogId ?? ''}-H5P-cid-{contentId}-sid-{subContentId}`,
     });
 
     if (document.readyState === 'loading') {
@@ -72,7 +72,7 @@ export default class SustainumsLocalUserDataForH5P {
    * Attempt to start.
    */
   attemptToStart() {
-    if (!SustainumsLocalUserDataForH5P.isH5PRunning()) {
+    if (!SnordiansLocalUserDataForH5P.isH5PRunning()) {
       return;
     }
 
@@ -86,7 +86,7 @@ export default class SustainumsLocalUserDataForH5P {
 
       this.initializeH5PHolders(holder, contentId);
 
-      if (window.sustainumsLocalUserDataForH5P.isUserLoggedIn) {
+      if (window.snordiansLocalUserDataForH5P.isUserLoggedIn) {
         return; // If user is logged in, state from database takes precedence.
       }
 

@@ -1,18 +1,18 @@
 <?php
 /**
- * Plugin Name: Sustainum's Local User Data for H5P
- * Plugin URI: https://github.com/otacke/sustainums-local-user-data-for-h5p
- * Text Domain: sustainums-local-user-data-for-h5p
+ * Plugin Name: Snordian's Local User Data for H5P
+ * Plugin URI: https://github.com/otacke/snordians-local-user-data-for-h5p
+ * Text Domain: snordians-local-user-data-for-h5p
  * Description: Store H5P user data in local storage.
  * Version: 1.0.4
- * Author: Sustainum, Oliver Tacke (SNORDIAN)
+ * Author: Oliver Tacke (SNORDIAN), Sustainum
  * Author URI: https://snordian.de
  * License: MIT
  *
- * @package sustainums-local-user-data-for-h5p
+ * @package snordians-local-user-data-for-h5p
  */
 
-namespace Sustainum\LocalUserDataForH5P;
+namespace Snordian\LocalUserDataForH5P;
 
 // as suggested by the WordPress community.
 defined( 'ABSPATH' ) || die( 'No script kiddies please!' );
@@ -41,8 +41,8 @@ function shlud_initialize() {
 	);
 
 	wp_enqueue_script(
-		'shlud-sustainums-local-user-data-for-h5p',
-		plugins_url( '/js/sustainums_local_user_data_for_h5p.js', __FILE__ ),
+		'shlud-snordians-local-user-data-for-h5p',
+		plugins_url( '/js/snordians_local_user_data_for_h5p.js', __FILE__ ),
 		array(),
 		SUSTAINUMSLOCALUSERDATAFORH5P_VERSION,
 		true
@@ -66,7 +66,7 @@ function shlud_initialize() {
 
 	wp_localize_script(
 		'shlud-main',
-		'sustainumsLocalUserDataForH5P',
+		'snordiansLocalUserDataForH5P',
 		array(
 			'wpBlogId'       => get_current_blog_id(),
 			'isUserLoggedIn' => is_user_logged_in(),
@@ -79,7 +79,7 @@ function shlud_initialize() {
 		function ( $tag, $handle ) {
 			$module_scripts = array(
 				'shlud-main',
-				'shlud-sustainums-local-user-data-for-h5p',
+				'shlud-snordians-local-user-data-for-h5p',
 				'shlud-local-storage-handler',
 				'shlud-h5p-holder',
 			);

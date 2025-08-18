@@ -1,5 +1,5 @@
 {
-  "name": "@sustainum/h5p-local-user-data",
+  "name": "@snordian/h5p-local-user-data",
   "description": "WordPress plugin for storing H5P user data locally",
   "version": "1.0.0",
   "scripts": {
@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/otacke/sustainums-local-user-data-for-h5p.git"
+    "url": "https://github.com/otacke/snordians-local-user-data-for-h5p.git"
   },
   "keywords": [
     "H5P",
@@ -17,9 +17,9 @@
   "author": "Sustainum <info@sustainum.de> (https://sustainum.de)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/otacke/sustainums-local-user-data-for-h5p/issues"
+    "url": "https://github.com/otacke/snordians-local-user-data-for-h5p/issues"
   },
-  "homepage": "https://github.com/otacke/sustainums-local-user-data-for-h5p",
+  "homepage": "https://github.com/otacke/snordians-local-user-data-for-h5p",
   "type": "module",
   "devDependencies": {
     "eslint-config-snordian-h5p": "github:otacke/eslint-config-snordian-h5p"
