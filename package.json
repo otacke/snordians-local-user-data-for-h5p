@@ -1,7 +1,7 @@
 {
   "name": "@snordian/h5p-local-user-data",
   "description": "WordPress plugin for storing H5P user data locally",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "scripts": {
     "lint": "eslint './js/**/*.js'"
   },

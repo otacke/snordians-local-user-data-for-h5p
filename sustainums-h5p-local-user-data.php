@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/otacke/snordians-local-user-data-for-h5p
  * Text Domain: snordians-local-user-data-for-h5p
  * Description: Store H5P user data in local storage.
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Oliver Tacke (SNORDIAN), Sustainum
  * Author URI: https://snordian.de
  * License: MIT

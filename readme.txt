@@ -3,7 +3,7 @@ Contributors: otacke
 Tags: h5p, resume, state
 Requires at least: 4.0
 Tested up to: 6.8
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: MIT
 License URI: https://github.com/otacke/snordians-local-user-data-for-h5p/blob/master/LICENSE
 
