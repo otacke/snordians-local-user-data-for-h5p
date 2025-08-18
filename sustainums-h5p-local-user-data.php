@@ -17,8 +17,8 @@ namespace Snordian\LocalUserDataForH5P;
 // as suggested by the WordPress community.
 defined( 'ABSPATH' ) || die( 'No script kiddies please!' );
 
-if ( ! defined( 'SUSTAINUMSLOCALUSERDATAFORH5P_VERSION' ) ) {
-	define( 'SUSTAINUMSLOCALUSERDATAFORH5P_VERSION', '1.0.4' );
+if ( ! defined( 'SNORDIANSLOCALUSERDATAFORH5P_VERSION' ) ) {
+	define( 'SNORDIANSLOCALUSERDATAFORH5P_VERSION', '1.0.5' );
 }
 
 /**
@@ -36,7 +36,7 @@ function shlud_initialize() {
 		'shlud-main',
 		plugins_url( '/js/main.js', __FILE__ ),
 		array(),
-		SUSTAINUMSLOCALUSERDATAFORH5P_VERSION,
+		SNORDIANSLOCALUSERDATAFORH5P_VERSION,
 		true
 	);
 
@@ -44,7 +44,7 @@ function shlud_initialize() {
 		'shlud-snordians-local-user-data-for-h5p',
 		plugins_url( '/js/snordians_local_user_data_for_h5p.js', __FILE__ ),
 		array(),
-		SUSTAINUMSLOCALUSERDATAFORH5P_VERSION,
+		SNORDIANSLOCALUSERDATAFORH5P_VERSION,
 		true
 	);
 
@@ -52,7 +52,7 @@ function shlud_initialize() {
 		'shlud-local-storage-handler',
 		plugins_url( '/js/local_storage_handler.js', __FILE__ ),
 		array(),
-		SUSTAINUMSLOCALUSERDATAFORH5P_VERSION,
+		SNORDIANSLOCALUSERDATAFORH5P_VERSION,
 		true
 	);
 
@@ -60,7 +60,7 @@ function shlud_initialize() {
 		'shlud-h5p-holder',
 		plugins_url( '/js/h5p_holder.js', __FILE__ ),
 		array(),
-		SUSTAINUMSLOCALUSERDATAFORH5P_VERSION,
+		SNORDIANSLOCALUSERDATAFORH5P_VERSION,
 		true
 	);
 
@@ -100,4 +100,4 @@ function shlud_initialize() {
 	);
 }
 
-add_action( 'the_post', 'Sustainum\LocalUserDataForH5P\shlud_initialize' );
+add_action( 'the_post', 'Snordian\LocalUserDataForH5P\shlud_initialize' );

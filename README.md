@@ -1,5 +1,5 @@
 # Snordian's Local User Data for H5P plugin
-The "Sustainum' Local User Data for H5P" plugin for WordPress amends the H5P plugin for WordPress. The latter saves the previous state of H5P content in the server's database for users who are logged in. This plugin will, when activated, also store the previous state in the user's browser and retrieve it from there. This enables to resume H5P content without having to be logged in.
+The "Snordian's Local User Data for H5P" plugin for WordPress amends the H5P plugin for WordPress. The latter saves the previous state of H5P content in the server's database for users who are logged in. This plugin will, when activated, also store the previous state in the user's browser and retrieve it from there. This enables to resume H5P content without having to be logged in.
 
 ## Installation
 
