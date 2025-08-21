@@ -22,8 +22,8 @@ The "Snordian's Local User Data for H5P" plugin for WordPress does not need to b
 
 ## Limitations
 - It is not possible to only store the previous state in the browser's local storage but not in the database without changes to the H5P core (or overloading it, which this plugin does not do). So, if users are logged into WordPress and do H5P exercises, the exercises's state will be stored inside the database.
-- Browser's limit the local storage available per domain to 5MB or 10MB. That means if there is lots of H5P contents that users use or there are H5P contents that store a lot of data or if other parts or your site also use the local storage, then space may run out and data may get lost.
-- As with H5P itself, the plugin cannot store the state of content that is embedded using embed codes instead of using a WordPress shortcode.
+- Browsers limit the amount of local storage available per domain to 5MB or 10MB. This means that if users access a lot of H5P content, if H5P content stores a lot of data, or if other parts of your site use the local storage, space may run out and data may be lost.
+- Similar to H5P itself, the plugin cannot store the state of content embedded with embed codes rather than WordPress shortcodes.
 
 ## Privacy
 Beware that (in theory) the H5P user state could contain personal information of the user if the respective exercise demands to enter personal information. The "Snordian's Local User Data for H5P" plugin does not allow you to get hold of that information - in other words: you are not processing it. However, since the H5P plugin will send the very same information to your server, dealing with privacy implications of the H5P plugin may or may not be relevant for you depending on your local privacy laws.
