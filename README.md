@@ -21,6 +21,7 @@ The "Snordian's Local User Data for H5P" plugin for WordPress does not need to b
 3. Set "Auto-save frequency (in seconds)" to the time interval that should be used. The "Snordian's Local User Data for H5P" plugin will use the same value. It's not advisable to set this too low, because even though the "Snordian's Local User Data for H5P" plugin uses the browser's local storage, H5P will store states inside the database and creating too many calls frequently may mean much load for your server.
 
 ## Limitations
+- The state will not be stored continuously, but be bound to H5P's core triggering respective events, see [How does resuming an exercise work in H5P?](https://snordian.de/2023/03/04/how-does-resuming-an-exercise-work-in-h5p) for details.
 - It is not possible to only store the previous state in the browser's local storage but not in the database without changes to the H5P core (or overloading it, which this plugin does not do). So, if users are logged into WordPress and do H5P exercises, the exercises's state will be stored inside the database.
 - Browsers limit the amount of local storage available per domain to 5MB or 10MB. This means that if users access a lot of H5P content, if H5P content stores a lot of data, or if other parts of your site use the local storage, space may run out and data may be lost.
 - Similar to H5P itself, the plugin cannot store the state of content embedded with embed codes rather than WordPress shortcodes.
