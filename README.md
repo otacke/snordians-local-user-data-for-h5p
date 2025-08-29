@@ -1,5 +1,5 @@
-# Snordian's Local User Data for H5P plugin
-The "Snordian's Local User Data for H5P" plugin for WordPress amends the H5P plugin for WordPress. The latter saves the previous state of H5P content in the server's database for users who are logged in. This plugin will, when activated, also store the previous state in the user's browser and retrieve it from there. This enables to resume H5P content without having to be logged in.
+# SNORDIAN's Local User Data for H5P plugin
+The "SNORDIAN's Local User Data for H5P" plugin for WordPress amends the H5P plugin for WordPress. The latter saves the previous state of H5P content in the server's database for users who are logged in. This plugin will, when activated, also store the previous state in the user's browser and retrieve it from there. This enables to resume H5P content without having to be logged in.
 
 ## Installation
 
@@ -15,10 +15,10 @@ Install just like any other plugin.
 6. Activate the plugin.
 
 ## Configure
-The "Snordian's Local User Data for H5P" plugin for WordPress does not need to be configured. In order to become active, you will go to the H5P plugin settings:
+The "SNORDIAN's Local User Data for H5P" plugin for WordPress does not need to be configured. In order to become active, you will go to the H5P plugin settings:
 1. Find "Save Content State"
 2. Check the option "Allow logged-in users to resume tasks". This is required for being able to restore the previous state of H5P content in general.
-3. Set "Auto-save frequency (in seconds)" to the time interval that should be used. The "Snordian's Local User Data for H5P" plugin will use the same value. It's not advisable to set this too low, because even though the "Snordian's Local User Data for H5P" plugin uses the browser's local storage, H5P will store states inside the database and creating too many calls frequently may mean much load for your server.
+3. Set "Auto-save frequency (in seconds)" to the time interval that should be used. The "SNORDIAN's Local User Data for H5P" plugin will use the same value. It's not advisable to set this too low, because even though the "SNORDIAN's Local User Data for H5P" plugin uses the browser's local storage, H5P will store states inside the database and creating too many calls frequently may mean much load for your server.
 
 ## Limitations
 - The state will not be stored continuously, but be bound to H5P's core triggering respective events, see [How does resuming an exercise work in H5P?](https://snordian.de/2023/03/04/how-does-resuming-an-exercise-work-in-h5p) for details.
@@ -27,13 +27,13 @@ The "Snordian's Local User Data for H5P" plugin for WordPress does not need to b
 - Similar to H5P itself, the plugin cannot store the state of content embedded with embed codes rather than WordPress shortcodes.
 
 ## Privacy
-Beware that (in theory) the H5P user state could contain personal information of the user if the respective exercise demands to enter personal information. The "Snordian's Local User Data for H5P" plugin does not allow you to get hold of that information - in other words: you are not processing it. However, since the H5P plugin will send the very same information to your server, dealing with privacy implications of the H5P plugin may or may not be relevant for you depending on your local privacy laws.
+Beware that (in theory) the H5P user state could contain personal information of the user if the respective exercise demands to enter personal information. The "SNORDIAN's Local User Data for H5P" plugin does not allow you to get hold of that information - in other words: you are not processing it. However, since the H5P plugin will send the very same information to your server, dealing with privacy implications of the H5P plugin may or may not be relevant for you depending on your local privacy laws.
 
 ## License
-The "Snordian's H5P Local User Data for H5P" plugin for WordPress is is licensed under the [MIT License](https://github.com/otacke/snordians-local-user-data-for-h5p/blob/master/LICENSE).
+The "SNORDIAN's H5P Local User Data for H5P" plugin for WordPress is is licensed under the [MIT License](https://github.com/otacke/snordians-local-user-data-for-h5p/blob/master/LICENSE).
 
 ## Sponsor note
-The plugin was developed by [Sustainum](https://www.sustainum.de/) within the [XR Energy project](https://xr-energy.eu/). Development work was carried out by [Snordian](https://snordian.de) as a contractor.
+The plugin was developed by [Sustainum](https://www.sustainum.de/) within the [XR Energy project](https://xr-energy.eu/). Development work was carried out by [SNORDIAN](https://snordian.de) as a contractor.
 
 _"Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.”_
 
