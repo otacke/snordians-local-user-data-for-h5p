@@ -113,10 +113,10 @@ export default class SnordiansLocalUserDataForH5P {
               }
 
               this.saveState(this.getJsonContent(contentId), state, contentId);
-            }
+            },
           );
-        }
-      }
+        },
+      },
     );
   }
 

@@ -130,7 +130,7 @@ export default class H5PHolder {
       'content-user-data-reset',
       'Data Reset',
       `${title}${message}${OKButton}`,
-      H5P.jQuery(this.container)
+      H5P.jQuery(this.container),
     );
 
     H5P.jQuery(dialog)

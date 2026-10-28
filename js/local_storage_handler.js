@@ -63,7 +63,7 @@ export default class LocalStorageHandler {
 
     const toStore = JSON.stringify({
       checksum: LocalStorageHandler.getNumericalHash(jsonContent),
-      state: JSON.stringify(data)
+      state: JSON.stringify(data),
     });
 
     window.localStorage.setItem(identifier, toStore);
